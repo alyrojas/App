@@ -1,0 +1,14 @@
+<button type="button" (click)="setHabilitar();" click="setMostrar()" class="btn btn-success my-3" name="button">Ocultar</button>
+
+
+<div class="card">
+  <div class="card-header bg-dark text-light">
+    Listado de Autores Destacados
+  </div>
+  <ul class="list-group" *ngIf="habilitar == true">
+      <li class="list-group-item"
+      *ngFor="let autores of listaAutores"> {{autores}}
+       </li>
+  </ul>
+  
+  </div>
